@@ -4,9 +4,9 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-# OpenAI Configuration
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_MODEL_NAME = os.getenv("OPENAI_MODEL_NAME", "gpt-4")
+# Groq Configuration (Free LLM API)
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_MODEL_NAME = os.getenv("GROQ_MODEL_NAME", "mixtral-8x7b-32768")
 
 # CrewAI Configuration
 CREWAI_LOG_LEVEL = os.getenv("CREWAI_LOG_LEVEL", "INFO")
